@@ -20,7 +20,14 @@ export const useFetch = (url) => {
           error: null
         })
       }
-    });
+    })
+    .catch(()=> {
+      setState({
+        data:null,
+        loading: false,
+        error: 'No se pued crear la info'
+      })
+    })
   }, [url])
   return state;
 }
