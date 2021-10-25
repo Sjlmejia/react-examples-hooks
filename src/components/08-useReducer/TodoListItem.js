@@ -7,7 +7,7 @@ export const TodoListItem = ({description, id, done, index, handleToggle, handle
         className={`item ${done && 'complete'}`}
         onClick={() => { handleToggle(id)}}
       >
-        {index +1}.  {description}
+        {index +1}. {description}
       </div>
       <button className="btn btn-outline-danger" onClick={()=> {handleDelete(id)}}>Borrar</button>
     </li>

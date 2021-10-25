@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Evaluar Tod List debe mostrarse correctamente 1`] = `
+<li
+  className="list-group-item"
+  key="1"
+>
+  <div
+    className="item false"
+    onClick={[Function]}
+  >
+    2
+    . 
+    Aprender React
+  </div>
+  <button
+    className="btn btn-outline-danger"
+    onClick={[Function]}
+  >
+    Borrar
+  </button>
+</li>
+`;
