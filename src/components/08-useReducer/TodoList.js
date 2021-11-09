@@ -6,9 +6,15 @@ export const TodoList = ({todos,handleDelete, handleToggle }) => {
     <ul className="list-group list-group-flush">
         {
           todos.map(({desc, id, done}, i) => {
-            return <TodoListItem key={id} description={desc} id={id} done={done} index={i} handleToggle={handleToggle} handleDelete={handleDelete}/>
+            return <TodoListItem
+                      key={id}
+                      description={desc}
+                      id={id} done={done}
+                      index={i}
+                      handleToggle={handleToggle}
+                      handleDelete={handleDelete}/>
           })
         }
-      </ul>
+    </ul>
   )
 }
