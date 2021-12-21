@@ -14,11 +14,13 @@ describe('Pruebas en todo List', () => {
         handleDelete ={handleDelete}
         handleToggle = {handleToggle}
     />);
+    // F6R2JC2B3GDW3D1HWHRRNFPL
   test('debe de mostrarse correctamente', () => {
     expect(wrapper).toMatchSnapshot();
   });
   test('debe de tener 2 todoItem', () => {
     expect(wrapper.find('TodoListItem').length).toBe(demoTodos.length);
+    expect(wrapper.find('TodoListItem').at(0).prop('handleDelete')).toEqual(expect.any(Function));
     expect(wrapper.find('TodoListItem').at(0).prop('handleDelete')).toEqual(expect.any(Function));
   });
 });
