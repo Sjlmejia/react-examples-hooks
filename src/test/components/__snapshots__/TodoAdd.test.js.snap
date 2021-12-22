@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`prueba es todo Add deberia montarse el comopente 1`] = `
+<div>
+  <h4>
+    Agregar Todo
+  </h4>
+  <hr />
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoComplete="off"
+      className="form-control"
+      name="description"
+      onChange={[Function]}
+      placeholder="Aprender ..."
+      type="text"
+      value=""
+    />
+    <button
+      className="btn btn-outline-primary mt-1"
+    >
+      Agregar
+    </button>
+  </form>
+</div>
+`;
